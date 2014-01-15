@@ -25,6 +25,9 @@ window.findNRooksSolution = function(n){
 window.countNRooksSolutions = function(n){
   var solutionCount = undefined; //fixme
 
+  var board = new Board({n:n});
+  board.get(1);
+
   console.log('Number of solutions for ' + n + ' rooks:', solutionCount);
   return solutionCount;
 };
